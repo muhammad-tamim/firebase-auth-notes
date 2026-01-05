@@ -36,12 +36,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDqIYO-RhAi3OF1VUhKB8ZAeIQLJ6gdSgc",
-  authDomain: "module-49-58a79.firebaseapp.com",
-  projectId: "module-49-58a79",
-  storageBucket: "module-49-58a79.firebasestorage.app",
-  messagingSenderId: "422912402173",
-  appId: "1:422912402173:web:0840180817d05f718f1494"
+  apiKey: "AIza...............................",
+  authDomain: "module-49......................",
+  projectId: "module-49.......................",
+  storageBucket: "module-49...................",
+  messagingSenderId: "........................",
+  appId: "1:422912............................."
 };
 
 const app = initializeApp(firebaseConfig);
