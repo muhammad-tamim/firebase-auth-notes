@@ -15,7 +15,7 @@
     - [Send a user verification email \& password reset email](#send-a-user-verification-email--password-reset-email)
     - [Delete a user:](#delete-a-user)
 - [example:](#example)
-    - [firebase auth with email \& password with update profile, google and github and private route example:](#firebase-auth-with-email--password-with-update-profile-google-and-github-and-private-route-example)
+    - [Example 1:](#example-1)
 
 
 # Setup firebase: 
@@ -473,7 +473,7 @@ deleteUser(user).then(() => {
 
 # example: 
 
-### firebase auth with email & password with update profile, google and github and private route example:
+### Example 1:
 
 ```jsx
 // AuthContext.jsx
@@ -740,7 +740,7 @@ import { FaGoogle, FaGithub } from 'react-icons/fa';
 
 const SignUp = () => {
     const navigate = useNavigate();
-    const { signUpUser, signInUserWithGoogle, signInUserWithGithub } = use(AuthContext)
+    const { signUpUser, signInUserWithGoogle, signInUserWithGithub, setUser, UpdateUserInfo } = use(AuthContext)
 
 const handleSignUp = (e) => {
         e.preventDefault()
@@ -798,7 +798,7 @@ const handleSignUp = (e) => {
             <h1>SignIn</h1>
             <form onSubmit={handleSignUp} className='flex flex-col gap-5'>
                 <input type="text" name='name' className='input' placeholder='name' />
-                <input type="url" name='photoUrl' className='input' placeholder='photoUrl' />
+                <input type="url" name='url' className='input' placeholder='photoUrl' />
                 <input type="email" name='email' className='input' placeholder='email' />
                 <input type="password" name='password' className='input' placeholder='password' />
                 <button className='btn' type='submit'>SignUp</button>
